@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #b41aa7;
+        color: #fff;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 10px;
+        border: 2px solid red;
+        height: 50px;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      /* Specific Styles */
+      .styled-name {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        padding-left: 20px;
+      }
+
+      .navbar-option:hover {
+        font-weight: bolder;
+        text-decoration: dashed;
+        color: rgb(140, 234, 228);
+      }
+
+      .profile {
+        text-align: center;
+      }
+
+      .profile img {
+        border-radius: 50%;
+        max-width: 100%;
+      }
+
+      .project {
+        margin-bottom: 20px;
+      }
+
+      .skill {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .recommendation {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .home-icon img {
+        width: 30px;
+        height: 30px;
+      }
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        header {
+          padding: 10px;
+        }
+
+        .styled-name {
+          top: 10px;
+          left: 10px;
+        }
+
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .profile img {
+          max-width: 80%;
+        }
+
+        .skill,
+        .recommendation {
+          width: 100%;
+        }
+      }
+      .navbar1 ul {
+        margin-left: 1200px;
+      }
+      .navbar1 ul li a:hover {
+        text-decoration: dashed;
+      }
+      header p {
+        margin: 0;
+        padding: 0;
+      }
+      .profliename {
+        /* border: 2px solid red; */
+        border-radius: 4px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="profliename">
+        <h2 class="styled-name">Yonas Esubalew</h2>
+        <p style="margin-top: 70px">Mob: +251 922 367 776</p>
+        <p>email: yonasbe999@gmail.com</p>
+      </div>
+      <nav class="navbar1">
+        <ul>
+          <li><a href="about.html" class="navbar-option">About</a></li>
+          <li><a href="#projects" class="navbar-option">Project Details</a></li>
+          <li><a href="#skills" class="navbar-option">Skills</a></li>
+          <li>
+            <a href="#recommendations" class="navbar-option">Recommendations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="profile">
+        <img src="" alt="Profile Picture" />
+        <h2>Yonas Esubalew</h2>
+        <p>
+          I am junior MERN Stack Web Developer and Bachlor of Computer Science
+          and Engineering Degree student in Adama Science And Technology
+          University(ASTU), my Development programming skills are HTML, CSS,
+          Javascript, Bootstrap, React, Redux, Material UI, Nodejs, Expressjs,
+          and MongoDB, these are our hard skills and I work together on other
+          two web developers as a team, our software process model is Agile
+          Development Model. more code more and more profit!
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Description of Project 3.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <img src="skill1.png" alt="Skill 1" />
+        <p>Skill 1</p>
+      </div>
+      <div class="skill">
+        <img src="skill2.png" alt="Skill 2" />
+        <p>Skill 2</p>
+      </div>
+      <div class="skill">
+        <img src="skill3.png" alt="Skill 3" />
+        <p>Skill 3</p>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="recommendation">
+        <p>Recommendation 1</p>
+      </div>
+      <div class="recommendation">
+        <p>Recommendation 2</p>
+      </div>
+      <!-- New recommendations will be added here -->
+    </section>
+
+    <footer>
+      <a href="#" class="home-icon"><img src="home-icon.png" alt="Home" /></a>
+    </footer>
+    <script>
+      const submitButton = document.getElementById("submit");
+      submitButton.addEventListener("click", function () {
+        if (confirm("Are you sure you want to submit this recommendation?")) {
+          alert("Recommendation submitted successfully!");
+        }
+      });
+    </script>
+  </body>
+</html>
